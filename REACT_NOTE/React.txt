@@ -1,0 +1,380 @@
+# REACT COURSE INTRO 
+
+# When you think about react -- think about component
+# React make  the code more reuable and be able to build complex user Interface  without going insane 
+# React is the biggest step that we need to do to get hired  
+
+
+# Requrminet to use react 
+
+
+# Install node-js 
+# Install vs code or any IDE 
+# Install google-chrome or any browser 
+# Add react-developer tools extnetions -- (optional but make live easier ) 
+# Pin it to the using list on google 
+# If it's grey mean this site don't use react 
+# If it's not  -- mean this site using react 
+
+# COMANDLINE INSTRUCNTION 
+
+
+# When you click (arrow-up) you get the previous command that used and if you click again you will go above 1 layer to other command 
+# You can drag and drop file you want in CMD and you will full route of that file 
+# write CD and that file drag and drop it and yah you are there 
+
+
+# NPM  
+
+# After we install Node-js 
+
+# We gonna talk about npm command line 
+
+# First we start with npm init to initilize the (manifist)  package.json 
+# Now we add some bunchies of thing 
+# to install dependcieis which all the project will depend on we gonna write in (project folder ) 
+# npm install something --save
+# To install it globally we should write the samething but with -g 
+# Note: --save (sometime if don't write it we gonna get error for older version so yah to stay in safe side write it ) 
+# About react most of these thing we not gonna use since react do most of the work under the hood 
+# NODE MODULE : cotain every dependency we are installing and most of time we don't push it on gitgub with the project 
+# Because the file size is too big 
+# We advice the user of this application go and try install those depedency 
+
+
+# More NPM things 
+
+# npm install 
+# npm unistall -g (something global) 
+# npm unstaill something in their folder 
+# to install react app npx create-react-app my-app
+
+# Webpack - bible 
+# Those two help compile our code to old type of code which make it the computer run it smoothly under the hood 
+# There are alot of other way to run react app but this is the most modren one and most used 
+# Note: Facebook advice uninstall any other way to create raect app
+
+
+# Go to specefic react folder 
+
+# in termainl write : npm start to start the dev-server 
+# If it work it will compile and run it right away 
+# If there is error it will tell you that there is error their 
+# other command : npm run build , npm test , npm run eject 
+
+
+# File-stracture 
+# We have 2 main files (src - public ) 
+# In public we have index.html
+# we use it to change header name add (fonts,icons etc.. ) 
+# And we have <div> of (id) which  gonna contain all the react project we have
+# npm build : gonna build our file ready for production but in the most of time we don't need it because the hosts gonna build it for us (we can drag and drop or do other things ) 
+# gitignore: we gonna ignore file that we don't need to push to git (build file - node MOdule) 
+# Package.Json: Gonna have all information and depedency of our project and i can confidently say this file is one of most important file in the project 
+# Because if we delete one of the dependecy by any chance 
+# We can just run npm install 
+# And we got them back 
+# We have test.js which don't gonna use 
+# We have app.js , index.js in our src folder which gonna use alot 
+# we have app.css - index.css which gonna have our styling 
+# We have read me file which have some info about our react project 
+# CTRL+C stop dev-server
+
+# Clean 
+
+# Clean all files  and make only index.js and wipe it clean too so we can start fresh start with react 
+
+
+
+
+
+# React FIST compnenet 
+
+# First of all we should import REACT from "react" 
+# And we need import ReactDOM from "react-dom" 
+
+# Now we gonna create function which will serve as component 
+# To create componenet in react we need 2 main things 
+# Importing react and those things in index.js 
+# Now we need to create function and first we should capitilize the first letter 
+# So react know this is special ... this is component  
+
+# Now we should show it  in Dom 
+
+# Now we gonna use ReactDom.render()
+# In render we gonna pass 2 things 
+# The component -  the place we gonna put the componenet  
+# Now we know that pass the compnenet as HTML more specefic JSX 
+# so we pass function in 2 ways 
+# Example if we have self closing like img we can do <item/> or we can do <item> </item> 
+# Now we know that 
+# We should run dev server and we can see our first compnenet
+# Note: WE SHOULD WRITE THE NAME OF FUNCTION START WITH CAPITAL LETTER OR FUNCTIONALITY WILL NOT WORK 
+# WE MUST RETURN SOMETHING FROM THE FUNCTION 
+
+
+# React JSX  , DOM componenet , stateless function compnenet 
+
+# DOM componenet, stateless function compnenet  Is the same name ... 
+# It should follow the JSX rule which mean we must return something 
+# we can write it in HTML manner code (Easy way)
+# Or we can use React.createElement() pass 3 things  
+# 1- Father element , 2- Properties , 3- Child 
+# This can become very nasty and hard to manage as your project grow and expand 
+# Stay with HTML syntax code plz
+
+
+
+
+
+# JSX RULES 
+
+# ALWAYS return 1 element (You can nest it as much as you want but when you return the first layer should have 1 element only 
+# Use semantic HTML tags to make your live easier and make things easier for other devs
+# Instead of class we gonna you use className 
+# We gonna use ES6 syntax which mean after first word we gonna capitilize the first letter of second word and third word and so on 
+# All attribute should be capitilized 
+# We can return single element or react fragment  
+# All element should close itself in the end no matter what element it is
+# We should when we return use () to make the liver easier because if we didn't the first element should be attached to the return 
+
+
+# Nested componenet
+
+# We can use nest the componenet and make our application like lego chuncks 
+# So instead of cramming everything of HTML in root componenet .. we gonna  make each chunck of them componenet and use it depend on our needs 
+# This make life easier and good to understand and keep you sane while looking for bug 
+# Note: Remeber you always return single element 
+
+
+#  Css Styling 
+
+# To use css styling we gonna import our css file or the index.js file (This not depedency so you should write the root ) 
+# When you use class we gonna use ClassName = " "
+# This type of css will gonna be replaced by JSX styling or other thing 
+# The main idea they did this  to prevent the naming collision
+
+
+
+# Styling JSX 
+
+# We need to go to compnenet and create style attribute =  
+# We should open {{}}
+# First one gonna make us enter JS world second one gonna turn it to object which is our goal 
+# Now we gonna use js style which is same as css style
+# Those style gonna apply as (inline style the most powerful one in CSS ) 
+# So you should know when you use FrameWork of styling that if it was using this inline or not because sometime you can't apply your own style because of this 
+# Now we need to know that there multiple way to do same thing in react to help the developer choose what he want  
+# You can apply the style using JSX or you can apply it using css file and add className it's your choice
+# Lastly the syntax should be style={{color:red,background:wite }} etc... object type style 
+
+
+# Js land {}
+# When you open {} in element you are officaly in Js land and you can start add some Js code 
+# In most of time we gonna use it to do some calculation and functionality for that componenet
+# It help increase our productivity and make time loss lower 
+
+# Props 
+
+# Props are just aurgment + parameters 
+# When we call the componenet we give attribute as we want and these attribute gonna have kind of value 
+# After that we gonna go to main componenet function and with this we gonna call props 
+# We log props to see what will we got 
+# Ofc props of each componenet  are different depend on what kind of attribute what we have 
+# And now we gonna destructure it 
+# And now use the data you have and assign it as you want 
+# And this is how can you use props  
+
+# Props Children 
+
+# First of all this children is object inside props 
+# In between closing tag of component we can write whatever HTML we want we can do whole project it doesn't matter 
+# Now when we do this kind of thing we can clearly see that it isn't rendered on in our project 
+# The way to access it .. is that we need to go to compnenet function and destructure the props and add children 
+# Note: Name here is important 
+# After that we need to know where we place it in our compnenet  and we are done 
+# Okay Now log it and do some excirsce to solidify your knowledge of React 
+
+
+# Now this all is cool but we want automate the stuffs more because this little bit need a lot of hand work which i don't like too much
+
+# First thing of all we gonna refactor our work and make things work 
+# In most case we gonna use Map loop to render values and destructure these value and return compnenet with these values 
+# Remember that the componenet tag can have as much property as we want 
+# And this property can be accessed by main componenet function 
+# We write props and destructure it and use it as we want 
+# Now we know that we can make small local dataBase and loop through it and each loop we gonna use componenet tag and pass 
+# attribute  with proper name and gonna use it
+# we return the big chunk of componenet that we will go to main container componenet and we are done 
+
+
+
+# Some ShortCut
+# Remember that we are using what inside the componenet tag to add as many attribute as we want 
+# How about iterate though database and get these attribute with same key name 
+# To be sure we can destructure inside the componenet tags itself for example item={book} which mean it gonna inherit all book data 
+# We can do it bois 
+
+# More shortCut and Bug fixing
+
+# you see you have that bug which tell you need to have unique props 
+# Just add id and give the id number of something 
+# Most of time it will be number 
+# You can set index of loop to be number too 
+# But this will cause you a lot of problem because it's not nifty way and your array data changing all the time 
+# This id help react to be in track of what you are doing not exactly sure of what it used for i think it have something to do with back-end
+# It's good for test and small Project but not in big project not at all 
+# Okay after fixing this we gonna back to shortCut
+# First of all instead of assigning book={book} in componenet tag we can just use spread operator and make {...book}
+# And remove attribute all together of book 
+# Now we gonna have it in props 
+# We gonna just destructure it and it's good 
+# We can refactor even more by destructuring inside the function () itself 
+# Some people use this type of syntax which i don't like too much but for your reference
+
+
+# React event Handler 
+
+# There Are alot of react events but most popular one we gonna use is (onClick) and we gonna use too mouseOver 
+# We should work with camel case typing 
+# we write the event as attribute and we gonna make = {} and here we can pass  make inline function or pass function inside it as reference 
+# syntax = onClick={function}
+# And in some case we need to pass parameters to the function that we pass inside it so we gonna make callback function and inside it we gonna pass this function and invoke it and write our aurgment
+# We can access too event object for the function we pass or main (mother) callback function we write (Not very sure about mother callBack function)
+# Go make some tests and enjoy
+
+# Import and export  
+# Es6 things we just need to know we can import compnenet and use it as we need 
+
+
+# To get something from git without downloading use git clone and URl and that's it instead of downloading and invoking etc...
+
+
+
+# Use state Error example
+
+# Use state is called (React hook) and it help us make the webpage dynamic and interactive with user 
+# Now we know that we gonna talk little bit about file
+# What is rendered in Html is the app.js 
+# We just gonna import things in App.js and put it in the container componenet And that's it 
+# We have final and setup always ... we can  import them both so when we have any wrong in our setup we can see the final and learn from it 
+# Now after we fixed the problem and everything is working just fine we need to know 2 things
+# The function and onClick handler is working  but .... it's only work on console log and those thing 
+# No changing in state 
+# Which lead us to the point where we need to use hooks 
+
+# Some notes 
+# We use react.fragment replaced to the div but they work the same way 
+# We make the button inside the compnenet and we don't need to pass any props 
+# We make onClick handler and we give it function 
+# Sometime we make this function as call back one if we have event object  or bubling events 
+# Making the function callBack one and invoke it will not solve anything we need some kind of state  
+
+
+# UseState hook basic 
+
+# UseState essentially is function provided from react file 
+# And it's specific name should imported from react 
+# syntax : {UseState} from "react" 
+# Now we know that 
+# Use state function accept 1 value 
+# First : Any value we could pass (function,array,object,string etc..)
+# Second Value is  The control function of useState
+# And this function itSelf accept value 
+# This value same (function,array,object,string etc..)
+# Now we know that we gonna work with some basic example 
+# When we pass useState and give It value of hello world 
+# We destructure the function to array 
+# This array gonna have 2 things
+# Text,setText
+# Second value of function is convintion to used to write (set) and the name of item after it 
+# Example: Apple - setApple 
+# Now We invoke the setText and pass value we want 
+# We put setText as the callback function of the button 
+# And everything work like magic
+# Note: Remember that the useState function control is the which gonna pass the value later to the main first value 
+# When we change this value of the function we gonna update the value of the main each time we add value to second function 
+# I know my talk sound like trash but yah ... we should know it's complicated so yah...
+
+
+# Some useState gotcha : 
+# First of all we should invoke the function inside the compnenet that you work the event in it not anywhere in the body
+# The function name should work as callback and contain the useState inside it should have capitilized or it will not work 
+# Note: In callBack function it's common convention that's we start with Use 
+# We can not set useState function as condition or something like that it will not work 
+# Syntax : const [text] === useState("hello") 
+
+# UseState Basic example 
+
+
+# Since I like to go and use it right away but i need to talk little bit about that 
+# First of all our example is gonna be get data and this data gonna be displayed 
+# We can remove all data using button clear item or we can remove portion of it by clicking remove item 
+# Simple but need a little bit of work 
+# With that said now fist of all we gonna make our function compnenet 
+# Inside this function we gonna invoke useState and pass the array inside it 
+# From the destructured  varible we gonna loop through it and get back our react.fragment which contain item each time 
+# Now we have all our item rolling
+# We add in the end deleting button 
+# We make it functionality 
+# We just make userState inner function empty and this should work 
+# Now for deleting single item 
+# We should make arrow function inside the onClick event and pass function
+# We do that so the event will not runned as time we run our app
+# The event will run only in the time we click on it 
+# We filter depend on Id 
+# If id match return all item just this 
+# And that's it our functionality is complete 
+
+# NOTE: DON'T FORGET TO destructure THE USESTATE IN [] NOT IN {}
+
+
+
+# UseState object example 
+
+# Now we make some compnenet return some value and lastly we gonna add button 
+# We want to change only 1 value from the object 
+# So if we go with normal string in changing the state this will not work 
+# If we go with the only object that we want to change technically it will not work but other data will get wiped off 
+# So our solution is to copy the data and modify it 
+# And the way to do that is by using spread operator 
+# This gonna make copy of our data and we gonna add comma (,) and make change on the portion of data that we want to change 
+# And this is the gotcha 
+# Apply it and enjoy
+
+# Note: UseState (set function) have direct access to the first item data always 
+# And if we use spread operator we can access the first item and copy it 
+
+# Note: We can make 3 UseState for each item and we change each of of them sepratly and no one will notice the different 
+# But in my opinion this is kind of bad way to set this and will hit the wall somehow in future 
+# Easy to set but consume much alot of time and need alot of maintaining so yah stick with object way and spread operator 
+# Both are good but do what you like
+
+# Counter React  
+
+# Make simple counter and you can do whatever you want with it 
+# You can set 3 inline function in the buttons 
+# Or you can set 3 outline function and pass refrence 
+# It's totally up to you 
+# Now we know that there is other thing 
+# Either we can update value of number 
+# By making setNumber(number-1 ) or (number+1) or (0)
+# Or we can do my way by setting new varible and this varible gonna have the old value with update like --number or ++number etc..
+# Both way do the same functionality but each person have his own thinking way to solve the problem  
+
+# Functional UseState 
+
+# We can Have The setState inside UseState and invoke it and pass callBack function
+# This will help us alot to work with ansynchronos method  
+# Because this function we can pass previous State as parameter 
+# And we can use it as we want 
+# This is so useFull because We work before with useState we don't have the previous state we have the (first value) which mean the value we pass in use State gonna be updated 
+# This kind of function not nececery all the time but some of people gonna use it alot in their code so be aware 
+# ANd ofc you can too 
+# Now in our example we want to update the value after 2 second
+# But if we click 10 times 
+# That mean we gonna update 10 time after 2 second ... 
+# In old way this will update only 1 time 
+# In this method RighNow gonna update 10 time 
+# Not really understand it but ok let's try 
+# Note: This kind of function must return something in the end or the functionality will go banana
